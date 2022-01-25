@@ -1,7 +1,7 @@
-import App from './App';
 import renderer from 'react-test-renderer'
+import GitHubCard from './GitHubCard'
 
 test('renders a snapshot', () => {
-  const tree = renderer.create(<App/>).toJSON()
+  const tree = renderer.create(<GitHubCard></GitHubCard>).toJSON()
   expect(tree).toMatchSnapshot()
 })
